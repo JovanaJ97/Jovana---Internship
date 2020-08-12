@@ -1,2 +1,1 @@
 SCSS learning
-Jovana
