@@ -5,6 +5,7 @@
 }
 body {
     margin: 0;
+    font-family: $primary-font;
 }
 h1, h2, h3 {
     margin: 0;
@@ -80,5 +81,79 @@ header {
             bottom: 0;
         }
     }    
+}
+.burger-menu {
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
+    h2 {
+        font-family: $tertiary-font;
+        color: $emphasis-color;
+        font-weight: lighter;
+    }
+    h3 {
+        text-transform: uppercase;
+        font-family: $primary-font;
+        color: $dark-black;
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    .burger-item {
+        width: 100%;
+        padding: 15px 0;
+        .burger-photo {
+            height: 150px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        .photo1 {
+            background-image: url(../img/burger1.png);
+        }
+        .photo2{
+            background-image: url(../img/burger2.png);
+        }
+        .photo3 {
+            background-image: url(../img/burger3.png);
+        }
+        .photo4 {
+            background-image: url(../img/burger4.png);
+        }
+        .photo5 {
+            background-image: url(../img/burger5.png);
+        }
+        .photo6 {
+            background-image: url(../img/burger6.png);
+        }
+        .photo7 {
+            background-image: url(../img/burger7.png);
+        }
+        .photo8 {
+            background-image: url(../img/burger8.png);
+        }
+        h4 {
+            font-size: 30px;
+            margin: 20px 0;
+        }
+        .price {
+            color: $orange;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+    }
+    .more-items {
+        display: inline-block;
+        width: 100%;
+        padding: 15px 0;
+        text-decoration: none;
+        border: 1px solid $orange;
+        border-radius: 32px;
+        color: $orange;
+        transition: 0.4s;
+        &:hover {
+            color: $white;
+            background-color: $orange;
+        }
+    }
 }
 
