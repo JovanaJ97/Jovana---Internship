@@ -6,6 +6,7 @@
 body {
   margin: 0;
   font-family: $primary-font;
+  background-image: url(../img/bgimage.png);
 }
 h1,
 h2,
@@ -159,6 +160,7 @@ header {
     border: 1px solid $orange;
     border-radius: 32px;
     color: $orange;
+    font-weight: bolder;
     transition: 0.4s;
     &:hover {
       color: $white;
@@ -317,8 +319,8 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   .burger-images {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -328,8 +330,8 @@ header {
     transition: 0.4s;
     &:hover .burger-hover {
       display: block;
-      width: 350px;
-      height: 350px;
+      width: 250px;
+      height: 250px;
       background-image: linear-gradient(
         0deg,
         rgba(0, 0, 0, 0.3) 0%,
@@ -354,5 +356,87 @@ header {
   }
   .img4 {
     background-image: url(../img/instagram4.png);
+  }
+}
+footer {
+  width: 100%;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  padding: 50px 0;
+  text-align: center;
+  .info-wrap {
+    width: 100%;
+    .info {
+      width: 100%;
+      padding: 10px;
+      h4 {
+        font-size: 20px;
+      }
+      a {
+        text-decoration: none;
+        color: $orange;
+        font-weight: 600;
+      }
+    }
+  }
+  .stay-connected {
+    text-align: left;
+    .subscription {
+      width: 100%;
+      position: relative;
+      input {
+        padding: 15px 20px;
+        border-radius: 32px;
+        border: 1px solid lightgray;
+        outline: none;
+      }
+      .email {
+        width: 100%;
+      }
+      .sign-up {
+        border: none;
+        padding: 10px 20px;
+        background-color:$orange;
+        color: $white;
+        cursor: pointer;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+      }
+    }
+  }
+  .social {
+    padding: 30px 0;
+    position: relative;
+    &:after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $light-grey;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: $orange;
+      i {
+        padding: 10px 0;
+        font-size: 20px;
+        border: 1px dashed $orange;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: 0.4s;
+        &:hover {
+          background-color: $orange;
+          color: $white;
+        }
+      }
+    }
   }
 }

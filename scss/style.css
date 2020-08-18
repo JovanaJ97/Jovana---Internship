@@ -8,6 +8,7 @@
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  background-image: url(../img/bgimage.png);
 }
 
 h1,
@@ -202,6 +203,7 @@ header .burger {
   border: 1px solid #F0542C;
   border-radius: 32px;
   color: #F0542C;
+  font-weight: bolder;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -394,8 +396,8 @@ header .burger {
 }
 
 .images .burger-images {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -408,8 +410,8 @@ header .burger {
 
 .images .burger-images:hover .burger-hover {
   display: block;
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3)));
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
   border-radius: 50%;
@@ -435,4 +437,99 @@ header .burger {
 
 .images .img4 {
   background-image: url(../img/instagram4.png);
+}
+
+footer {
+  width: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.1)), to(rgba(0, 0, 0, 0.1)));
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+  padding: 50px 0;
+  text-align: center;
+}
+
+footer .info-wrap {
+  width: 100%;
+}
+
+footer .info-wrap .info {
+  width: 100%;
+  padding: 10px;
+}
+
+footer .info-wrap .info h4 {
+  font-size: 20px;
+}
+
+footer .info-wrap .info a {
+  text-decoration: none;
+  color: #F0542C;
+  font-weight: 600;
+}
+
+footer .stay-connected {
+  text-align: left;
+}
+
+footer .stay-connected .subscription {
+  width: 100%;
+  position: relative;
+}
+
+footer .stay-connected .subscription input {
+  padding: 15px 20px;
+  border-radius: 32px;
+  border: 1px solid lightgray;
+  outline: none;
+}
+
+footer .stay-connected .subscription .email {
+  width: 100%;
+}
+
+footer .stay-connected .subscription .sign-up {
+  border: none;
+  padding: 10px 20px;
+  background-color: #F0542C;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+footer .social {
+  padding: 30px 0;
+  position: relative;
+}
+
+footer .social:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #6E6E6E;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+footer .social a {
+  display: inline-block;
+  text-decoration: none;
+  color: #F0542C;
+}
+
+footer .social a i {
+  padding: 10px 0;
+  font-size: 20px;
+  border: 1px dashed #F0542C;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+footer .social a i:hover {
+  background-color: #F0542C;
+  color: #fff;
 }
