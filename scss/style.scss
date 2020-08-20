@@ -104,6 +104,7 @@ header {
     h2 {
       color: $emphasis-color;
       font-family: $tertiary-font;
+      font-weight: lighter;
       font-size: 50px;
       position: absolute;
       bottom: 0;
@@ -280,6 +281,7 @@ header {
     margin: 10px 0;
     color: $white;
     font-size: 22px;
+    text-align: center;
   }
   .play-button {
     width: 80px;
@@ -371,19 +373,19 @@ footer {
     width: 100%;
     .info {
       width: 100%;
-      padding: 10px;
       h4 {
         font-size: 20px;
       }
       a {
         text-decoration: none;
         color: $orange;
-        font-weight: 600;
+        font-size: 20px;
       }
     }
   }
   .stay-connected {
     text-align: left;
+    padding: 0 10px;
     .subscription {
       width: 100%;
       position: relative;
@@ -399,7 +401,7 @@ footer {
       .sign-up {
         border: none;
         padding: 10px 20px;
-        background-color:$orange;
+        background-color: $orange;
         color: $white;
         cursor: pointer;
         position: absolute;
@@ -435,6 +437,289 @@ footer {
         &:hover {
           background-color: $orange;
           color: $white;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .burger-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    .burger-item {
+      width: 50%;
+      text-align: left;
+      .burger-photo {
+        width: 50%;
+      }
+    }
+  }
+  .offer {
+    .burger-president {
+      height: 400px;
+      &:nth-child(1) {
+        margin-bottom: 0;
+      }
+      .text-wrap {
+        h4 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  .about-us {
+    display: flex;
+    flex-wrap: wrap;
+    .staff {
+      width: 40%;
+      height: 400px;
+      .staff-single {
+        right: -10px;
+      }
+    }
+    .about-text {
+      width: 60%;
+      padding: 0 30px;
+      h2 {
+        margin-top: -60px;
+      }
+    }
+  }
+  .commercial {
+    h4 {
+      font-size: 50px;
+    }
+  }
+  .images {
+    .burger-images {
+      width: 250px;
+      height: 250px;
+      margin-right: 20px;
+      &:hover .burger-hover {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+  footer {
+    .info-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      .info {
+        width: 50%;
+      }
+      .stay-connected {
+        width: 100%;
+      }
+      .social {
+        width: 100%;
+      }
+      small {
+        margin: 20px auto;
+      }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    position: static;
+    overflow: visible;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 0;
+    nav {
+      display: block;
+      ul {
+        display: block;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        a {
+          display: inline-block;
+          padding: 0 20px;
+          color: $white;
+          text-decoration: none;
+          font-size: 12px;
+          font-weight: 600;
+          position: relative;
+          &:hover {
+            color: $emphasis-color;
+            &:after {
+              content: "";
+              width: 50%;
+              height: 1px;
+              background-color: $emphasis-color;
+              position: absolute;
+              bottom: -50%;
+              right: 19px;
+            }
+          }
+        }
+      }
+    }
+    .social-icons,
+    .contact {
+      color: $white;
+      display: inline-block;
+      padding: 15px 0;
+      text-decoration: none;
+    }
+    .contact {
+      border: 1px solid $emphasis-color;
+      border-radius: 32px;
+      font-size: 12px;
+      font-weight: 600;
+      color: $emphasis-color;
+      padding: 10px;
+    }
+    .social-icons {
+      a {
+        text-decoration: none;
+      }
+      .icon {
+        font-size: 12px;
+        padding: 0 5px;
+        color: $white;
+        &:hover {
+          color: $emphasis-color;
+        }
+      }
+    }
+    .burger {
+      display: none;
+    }
+    .logo {
+      height: 70px;
+    }
+  }
+  .hero {
+    height: calc(100vh - 50px);
+    .intro-wrap {
+      padding: 0;
+      top: 20%;
+      position: relative;
+      &:before {
+        content: "<";
+        width: 30px;
+        height: 80px;
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        background-color:$light-grey;
+        position: absolute;
+        left: 0;
+        top: 50%;
+      }
+      &:after {
+        content: ">";
+        width: 30px;
+        height: 80px;
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        background-color: $light-grey;
+        position: absolute;
+        right: 0;
+        top: 50%;
+      }
+      h1 {
+        font-size: 70px;
+      }
+      h2 {
+        font-size: 100px;
+        bottom: -40%;
+      }
+    }
+  }
+  .burger-wrap {
+    .burger-item {
+      display: flex;
+      flex-wrap: wrap;
+      .burger-photo {
+        width: 40%;
+      }
+      .burger-text-wrap {
+        width: 60%;
+        h4 {
+          font-size: 28px;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .offer {
+    display: flex;
+    flex-wrap: wrap;
+    .burger-president {
+      width: 50%;
+      .text-wrap {
+        padding: 30px;
+      }
+    }
+  }
+  .about-us {
+    .staff {
+      height: 600px;
+      .staff-single {
+        width: 250px;
+        height: 400px;
+      }
+    }
+    .about-text {
+      padding: 0 100px;
+      h3 {
+        font-size: 50px;
+      }
+    }
+  }
+  .commercial {
+    height: 500px;
+  }
+  .testimonial {
+    width: 50%;
+    position: relative;
+    p {
+      position: relative;
+      &:before {
+        content: "<";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: -100px;
+        bottom: 0;
+        border: 1px solid $light-grey;
+        border-radius: 50%;
+      }
+      &:after {
+        content: ">";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: -100px;
+        bottom: 0;
+        border: 1px solid $light-grey;
+        border-radius: 50%;
+      }
+    }
+  }
+  footer {
+    .info-wrap {
+      .info {
+        width: 33%;
+      }
+      .stay-connected {
+        width: 33%;
+      }
+      .social {
+        padding: 50px 0;
+        i {
+          margin-right: 10px;
         }
       }
     }
