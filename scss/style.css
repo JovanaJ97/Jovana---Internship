@@ -662,6 +662,9 @@ footer .social a i:hover {
     bottom: -50%;
     right: 19px;
   }
+  header nav ul .active {
+    color: #F2C64D;
+  }
   header .social-icons,
   header .contact {
     color: #fff;

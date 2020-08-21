@@ -557,6 +557,9 @@ footer {
             }
           }
         }
+        .active {
+          color: $emphasis-color;
+        }
       }
     }
     .social-icons,
@@ -604,12 +607,12 @@ footer {
         content: "<";
         width: 30px;
         height: 80px;
-        display: flex; 
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         color: $white;
-        background-color:$light-grey;
+        background-color: $light-grey;
         position: absolute;
         left: 0;
         top: 50%;
@@ -618,7 +621,7 @@ footer {
         content: ">";
         width: 30px;
         height: 80px;
-        display: flex; 
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
