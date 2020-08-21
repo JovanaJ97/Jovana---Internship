@@ -667,11 +667,14 @@ footer {
     }
   }
   .about-us {
+    padding: 100px 0;
     .staff {
       height: 600px;
       .staff-single {
         width: 250px;
         height: 400px;
+        right: -20px;
+        bottom: -40px;
       }
     }
     .about-text {
@@ -708,6 +711,17 @@ footer {
         bottom: 0;
         border: 1px solid $light-grey;
         border-radius: 50%;
+      }
+    }
+  }
+  .images {
+    .burger-images {
+      width: 200px;
+      height: 200px;
+      margin-right: 20px;
+      &:hover .burger-hover {
+        width: 170px;
+        height: 170px;
       }
     }
   }
