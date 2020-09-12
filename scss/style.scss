@@ -3,40 +3,48 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: $primary-font;
   background-image: url(../img/bgimage.png);
 }
+
 h1,
 h2,
 h3 {
   margin: 0;
 }
+
 .container {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto;
 }
+
 .container-fluid {
   width: 100%;
 }
+
 .price {
   color: $orange;
   font-weight: 600;
   font-size: 24px;
 }
+
 .h2-style {
   font-family: "Pacifico", cursive;
   color: #f2c64d;
   font-weight: lighter;
 }
+
 .h3-style {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
   color: #1a0d01;
   font-size: 32px;
 }
+
 header {
   width: 100%;
   height: 50px;
@@ -49,31 +57,34 @@ header {
   position: fixed;
   overflow: hidden;
   z-index: 1;
+
   nav,
   ul,
   .social-icons,
   .contact {
     display: none;
   }
+
   .logo {
     height: 40px;
   }
+
   .burger {
     color: $white;
     font-size: 30px;
   }
 }
+
 .hero {
   width: 100%;
   min-height: calc(60vh - 50px);
-  background-image: linear-gradient(
-      0deg,
+  background-image: linear-gradient(0deg,
       rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0.4) 100%
-    ),
+      rgba(0, 0, 0, 0.4) 100%),
     url(../img/banner.png);
   background-size: cover;
   background-position: center;
+
   .intro-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -82,11 +93,13 @@ header {
     text-align: center;
     padding: 50px 0;
     position: relative;
+
     h3,
     h1 {
       color: $white;
       font-family: $secondary-font;
     }
+
     h3 {
       display: inline-block;
       font-size: 18px;
@@ -96,11 +109,13 @@ header {
       padding: 20px;
       background-repeat: no-repeat;
     }
+
     h1 {
       font-size: 40px;
       text-transform: uppercase;
       line-height: 1.2;
     }
+
     h2 {
       color: $emphasis-color;
       font-family: $tertiary-font;
@@ -109,50 +124,68 @@ header {
       position: absolute;
       bottom: 0;
     }
+
+    .angle-left,
+    .angle-right {
+      display: none;
+    }
   }
 }
+
 .burger-menu {
   width: 100%;
   text-align: center;
   padding: 50px 20px;
+
   .burger-item {
     width: 100%;
     padding: 15px 0;
+
     .burger-photo {
       height: 150px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
     }
+
     .photo1 {
       background-image: url(../img/burger1.png);
     }
+
     .photo2 {
       background-image: url(../img/burger2.png);
     }
+
     .photo3 {
       background-image: url(../img/burger3.png);
     }
+
     .photo4 {
       background-image: url(../img/burger4.png);
     }
+
     .photo5 {
       background-image: url(../img/burger5.png);
     }
+
     .photo6 {
       background-image: url(../img/burger6.png);
     }
+
     .photo7 {
       background-image: url(../img/burger7.png);
     }
+
     .photo8 {
       background-image: url(../img/burger8.png);
     }
+
     h4 {
       font-size: 30px;
       margin: 20px 0;
     }
   }
+
   .more-items {
     display: inline-block;
     width: 100%;
@@ -163,16 +196,19 @@ header {
     color: $orange;
     font-weight: bolder;
     transition: 0.4s;
+
     &:hover {
       color: $white;
       background-color: $orange;
     }
   }
 }
+
 .offer {
   width: 100%;
   padding: 50px 0;
   color: $white;
+
   .burger-president {
     width: 100%;
     height: 300px;
@@ -183,31 +219,32 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
     &:nth-child(1) {
       margin-bottom: 30px;
     }
   }
+
   .burger1 {
-    background-image: linear-gradient(
-        0deg,
+    background-image: linear-gradient(0deg,
         rgba(0, 0, 0, 0.3) 0%,
-        rgba(0, 0, 0, 0.3) 100%
-      ),
+        rgba(0, 0, 0, 0.3) 100%),
       url(../img/1.png);
   }
+
   .burger2 {
-    background-image: linear-gradient(
-        0deg,
+    background-image: linear-gradient(0deg,
         rgba(0, 0, 0, 0.3) 0%,
-        rgba(0, 0, 0, 0.3) 100%
-      ),
+        rgba(0, 0, 0, 0.3) 100%),
       url(../img/2.png);
   }
+
   .text-wrap {
     h4 {
       font-size: 20px;
       margin: 10px 0;
     }
+
     .order-now {
       display: inline-block;
       color: $white;
@@ -219,6 +256,7 @@ header {
       border: 1px solid $emphasis-color;
       border-radius: 32px;
       transition: 0.4s;
+
       &:hover {
         background-color: transparent;
         color: $emphasis-color;
@@ -226,9 +264,11 @@ header {
     }
   }
 }
+
 .about-us {
   width: 100%;
   padding: 50px 10px;
+
   .staff {
     background-image: url(../img/about1.png);
     width: 100%;
@@ -238,6 +278,7 @@ header {
     background-size: cover;
     background-position: top;
     position: relative;
+
     .staff-single {
       width: 120px;
       height: 200px;
@@ -246,21 +287,22 @@ header {
       bottom: -20px;
     }
   }
+
   .about-text {
     padding: 20px 0;
+
     p {
       line-height: 1.6;
     }
   }
 }
+
 .commercial {
   width: 100%;
   height: 400px;
-  background-image: linear-gradient(
-      0deg,
+  background-image: linear-gradient(0deg,
       rgba(0, 0, 0, 0.3) 0%,
-      rgba(0, 0, 0, 0.3) 100%
-    ),
+      rgba(0, 0, 0, 0.3) 100%),
     url(../img/video.png);
   background-position: center;
   background-size: cover;
@@ -269,6 +311,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   h4 {
     margin: 0;
     color: $white;
@@ -277,18 +320,21 @@ header {
     text-transform: uppercase;
     font-size: 32px;
   }
+
   h5 {
     margin: 10px 0;
     color: $white;
     font-size: 22px;
     text-align: center;
   }
+
   .play-button {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     background-color: $orange;
     position: relative;
+
     .play {
       font-size: 24px;
       color: $white;
@@ -299,27 +345,38 @@ header {
     }
   }
 }
+
 .testimonial {
   width: 80%;
   padding: 50px 0;
   text-align: center;
+
   h3 {
     margin: 30px 0;
   }
+
   h5 {
     margin: 0;
   }
+
   .star {
     font-size: 10px;
     color: $emphasis-color;
   }
+
+  .left-angle,
+  .right-angle {
+    display: none;
+  }
 }
+
 .images {
   width: 100%;
   padding: 50px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   .burger-images {
     width: 300px;
     height: 300px;
@@ -330,15 +387,14 @@ header {
     transition: 0.4s;
     position: relative;
     transition: 0.4s;
+
     &:hover .burger-hover {
       display: block;
       width: 250px;
       height: 250px;
-      background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.3) 0%,
-        rgba(0, 0, 0, 0.3) 100%
-      );
+      background-image: linear-gradient(0deg,
+          rgba(0, 0, 0, 0.3) 0%,
+          rgba(0, 0, 0, 0.3) 100%);
       border-radius: 50%;
       border: 1px dashed white;
       position: absolute;
@@ -347,35 +403,42 @@ header {
       transform: translate(-50%, -50%);
     }
   }
+
   .img1 {
     background-image: url(../img/instagram1.png);
   }
+
   .img2 {
     background-image: url(../img/instagram2.png);
   }
+
   .img3 {
     background-image: url(../img/instagram3.png);
   }
+
   .img4 {
     background-image: url(../img/instagram4.png);
   }
 }
+
 footer {
   width: 100%;
-  background-image: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.1) 0%,
-    rgba(0, 0, 0, 0.1) 100%
-  );
+  background-image: linear-gradient(0deg,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.1) 100%);
   padding: 50px 0;
   text-align: center;
+
   .info-wrap {
     width: 100%;
+
     .info {
       width: 100%;
+
       h4 {
         font-size: 20px;
       }
+
       a {
         text-decoration: none;
         color: $orange;
@@ -383,21 +446,26 @@ footer {
       }
     }
   }
+
   .stay-connected {
     text-align: left;
     padding: 0 10px;
+
     .subscription {
       width: 100%;
       position: relative;
+
       input {
         padding: 15px 20px;
         border-radius: 32px;
         border: 1px solid lightgray;
         outline: none;
       }
+
       .email {
         width: 100%;
       }
+
       .sign-up {
         border: none;
         padding: 10px 20px;
@@ -410,9 +478,11 @@ footer {
       }
     }
   }
+
   .social {
     padding: 30px 0;
     position: relative;
+
     &:after {
       content: "";
       width: 100%;
@@ -422,10 +492,12 @@ footer {
       left: 0;
       bottom: 0;
     }
+
     a {
       display: inline-block;
       text-decoration: none;
       color: $orange;
+
       i {
         padding: 10px 0;
         font-size: 20px;
@@ -434,6 +506,7 @@ footer {
         height: 40px;
         border-radius: 50%;
         transition: 0.4s;
+
         &:hover {
           background-color: $orange;
           color: $white;
@@ -442,25 +515,46 @@ footer {
     }
   }
 }
+
 @media (min-width: 768px) {
+  .hero {
+    height: 80vh;
+
+    .intro-wrap {
+      h1 {
+        font-size: 50px;
+      }
+
+      h2 {
+        font-size: 100px;
+        bottom: -60px;
+      }
+    }
+  }
+
   .burger-wrap {
     display: flex;
     flex-wrap: wrap;
     padding: 50px 0;
+
     .burger-item {
       width: 50%;
       text-align: left;
+
       .burger-photo {
         width: 50%;
       }
     }
   }
+
   .offer {
     .burger-president {
       height: 400px;
+
       &:nth-child(1) {
         margin-bottom: 0;
       }
+
       .text-wrap {
         h4 {
           font-size: 30px;
@@ -468,100 +562,133 @@ footer {
       }
     }
   }
+
   .about-us {
     display: flex;
     flex-wrap: wrap;
+
     .staff {
       width: 40%;
       height: 400px;
+
       .staff-single {
         right: -10px;
       }
     }
+
     .about-text {
       width: 60%;
       padding: 0 30px;
+
       h2 {
         margin-top: -60px;
       }
     }
   }
+
   .commercial {
     h4 {
       font-size: 50px;
     }
   }
+
   .images {
     .burger-images {
       width: 250px;
       height: 250px;
       margin-right: 20px;
+
       &:hover .burger-hover {
         width: 200px;
         height: 200px;
       }
     }
   }
+
   footer {
     .info-wrap {
       display: flex;
       flex-wrap: wrap;
+
       .info {
         width: 50%;
       }
+
       .stay-connected {
         width: 100%;
       }
+
       .social {
         width: 100%;
       }
+
       small {
         margin: 20px auto;
       }
     }
   }
 }
-@media (min-width: 1024px) {
+
+@media (min-width: 1366px) {
   header {
-    position: static;
+    height: 60px;
+    position: fixed;
     overflow: visible;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    padding: 0;
+    padding: 5px 50px;
+
     nav {
       display: block;
+
       ul {
         display: block;
         list-style-type: none;
         display: flex;
         flex-wrap: wrap;
-        a {
-          display: inline-block;
-          padding: 0 20px;
-          color: $white;
-          text-decoration: none;
-          font-size: 12px;
-          font-weight: 600;
+
+        li {
           position: relative;
-          &:hover {
-            color: $emphasis-color;
-            &:after {
-              content: "";
-              width: 50%;
-              height: 1px;
-              background-color: $emphasis-color;
-              position: absolute;
-              bottom: -50%;
-              right: 19px;
+
+          .angle-down {
+            font-size: 10px;
+            color: white;
+            position: absolute;
+            right: 10px;
+            top: 6px;
+          }
+
+          a {
+            display: inline-block;
+            padding: 0 20px;
+            color: $white;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 600;
+
+            &:hover {
+              color: $emphasis-color;
+
+              &:after {
+                content: "";
+                width: 50%;
+                height: 1px;
+                background-color: $emphasis-color;
+                position: absolute;
+                bottom: -50%;
+                right: 19px;
+              }
             }
           }
         }
+
         .active {
           color: $emphasis-color;
         }
       }
     }
+
     .social-icons,
     .contact {
       color: $white;
@@ -569,6 +696,7 @@ footer {
       padding: 15px 0;
       text-decoration: none;
     }
+
     .contact {
       border: 1px solid $emphasis-color;
       border-radius: 32px;
@@ -577,78 +705,89 @@ footer {
       color: $emphasis-color;
       padding: 10px;
     }
+
     .social-icons {
       a {
         text-decoration: none;
       }
+
       .icon {
         font-size: 12px;
         padding: 0 5px;
         color: $white;
+
         &:hover {
           color: $emphasis-color;
         }
       }
     }
+
     .burger {
       display: none;
     }
+
     .logo {
-      height: 70px;
+      display: inline-block;
+      height: 60px;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%);
     }
   }
+
   .hero {
-    height: calc(100vh - 50px);
+    height: 100vh;
+
     .intro-wrap {
       padding: 0;
       top: 20%;
-      position: relative;
-      &:before {
-        content: "<";
-        width: 30px;
-        height: 80px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        color: $white;
-        background-color: $light-grey;
-        position: absolute;
-        left: 0;
-        top: 50%;
-      }
-      &:after {
-        content: ">";
-        width: 30px;
-        height: 80px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        color: $white;
-        background-color: $light-grey;
-        position: absolute;
-        right: 0;
-        top: 50%;
-      }
+
       h1 {
         font-size: 70px;
       }
+
       h2 {
         font-size: 100px;
         bottom: -40%;
       }
+
+      .angle-right {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        color: white;
+        font-size: 20px;
+        padding: 40px 10px;
+        background-color: $light-grey;
+      }
+
+      .angle-left {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        color: white;
+        font-size: 20px;
+        padding: 40px 10px;
+        background-color: $light-grey;
+      }
     }
   }
+
   .burger-wrap {
     .burger-item {
       display: flex;
       flex-wrap: wrap;
+
       .burger-photo {
         width: 40%;
       }
+
       .burger-text-wrap {
         width: 60%;
+
         h4 {
           font-size: 28px;
           margin: 0;
@@ -656,20 +795,26 @@ footer {
       }
     }
   }
+
   .offer {
     display: flex;
     flex-wrap: wrap;
+
     .burger-president {
       width: 50%;
+
       .text-wrap {
         padding: 30px;
       }
     }
   }
+
   .about-us {
     padding: 100px 0;
+
     .staff {
       height: 600px;
+
       .staff-single {
         width: 250px;
         height: 400px;
@@ -677,68 +822,129 @@ footer {
         bottom: -40px;
       }
     }
+
     .about-text {
       padding: 0 100px;
+
       h3 {
         font-size: 50px;
       }
     }
   }
+
   .commercial {
     height: 500px;
   }
+
   .testimonial {
     width: 50%;
     position: relative;
-    p {
-      position: relative;
-      &:before {
-        content: "<";
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        left: -100px;
-        bottom: 0;
-        border: 1px solid $light-grey;
-        border-radius: 50%;
-      }
-      &:after {
-        content: ">";
-        width: 20px;
-        height: 20px;
-        position: absolute;
-        right: -100px;
-        bottom: 0;
-        border: 1px solid $light-grey;
-        border-radius: 50%;
-      }
+
+    .left-angle {
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: -20%;
+      padding: 5px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid $light-grey;
+    }
+
+    .right-angle {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: -20%;
+      padding: 5px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid $light-grey;
     }
   }
+
   .images {
     .burger-images {
       width: 200px;
       height: 200px;
       margin-right: 20px;
+
       &:hover .burger-hover {
         width: 170px;
         height: 170px;
       }
     }
   }
+
   footer {
     .info-wrap {
       .info {
         width: 33%;
       }
+
       .stay-connected {
         width: 33%;
       }
+
       .social {
         padding: 50px 0;
+
         i {
           margin-right: 10px;
         }
       }
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .burger-menu {
+    h2 {
+      font-size: 32px;
+    }
+
+    h3 {
+      font-size: 50px;
+    }
+  }
+
+  .offer {
+    .burger-president {
+      height: 500px;
+      padding: 30px;
+    }
+  }
+
+  .about-us {
+    .staff {
+      width: 50%;
+      height: 700px;
+
+      .staff-single {
+        width: 300px;
+        height: 450px;
+      }
+    }
+
+    .about-text {
+      width: 50%;
+      padding: 0 80px;
+    }
+  }
+
+  .commercial {
+    height: 600px;
+  }
+
+  .testimonial {
+    h2 {
+      font-size: 32px;
+    }
+
+    h3 {
+      font-size: 50px;
     }
   }
 }
